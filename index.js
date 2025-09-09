@@ -155,7 +155,7 @@ function addToCart(item) {
 }
 
 function showModal(id) {
-  alert("Open modal for tree id: " + id);
+  alert("Open modal for tree id: " + id );
 }
 
 loadLessons();

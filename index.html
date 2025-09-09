@@ -110,16 +110,15 @@
         <h2 class="text-4xl font-semibold text-center">Choose Your Trees</h2>
       </div>
       <div
-        class="w-11/12 mx-auto py-10 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-20  mt-8 min-h-[874px]"
+        class="w-11/12 mx-auto py-10 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-20 mt-8 min-h-[874px]"
       >
-        <div id="categories" class="cart col-span-4 p-1 "></div>
+        <div id="categories" class="cart col-span-4 p-1"></div>
 
         <div class="cards col-span-13">
           <div
             id="tree-container"
             class="bg-gray-100 grid grid-cols-3 gap-x-2 gap-y-5 px-4 w-full mx-auto my-10"
-          >
-          </div>
+          ></div>
         </div>
         <div class="cart col-span-3">
           <aside class="col-span-1 md:col-span-1">
@@ -240,8 +239,26 @@
     <!-- footer section is done  -->
 
     <!-- modal div start  -->
+    <!-- Modal structure -->
+    <dialog id="treeModal" class="modal">
+      <div class="modal-box w-11/12 max-w-3xl">
+        <form method="dialog">
+          <!-- close button -->
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <div id="modal-content" class="space-y-4">
+          <!-- এখানে JS দিয়ে ডাইনামিক কন্টেন্ট আসবে -->
+          <p class="text-center text-gray-500">Loading...</p>
+        </div>
+      </div>
+    </dialog>
 
     <!-- modal div done  -->
+
     <script src="./index.js"></script>
   </body>
 </html>
