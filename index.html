@@ -110,22 +110,28 @@
         <h2 class="text-4xl font-semibold text-center">Choose Your Trees</h2>
       </div>
       <div
-        class="w-11/12 mx-auto py-10 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-20 border-2 mt-8 min-h-[874px]"
+        class="w-11/12 mx-auto py-10 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-20  mt-8 min-h-[874px]"
       >
-        <div id="categories" class="cart col-span-2 p-1 border"></div>
+        <div id="categories" class="cart col-span-4 p-1 "></div>
 
-        <div class="cards col-span-15 border">
+        <div class="cards col-span-13">
           <div
             id="tree-container"
             class="bg-gray-100 grid grid-cols-3 gap-x-2 gap-y-5 px-4 w-full mx-auto my-10"
           >
-            <!-- card start  -->
-           
-            <!-- card end -->
           </div>
         </div>
-        <div class="cart col-span-3 border-2 bg-green-400">
-          <h1>Right</h1>
+        <div class="cart col-span-3">
+          <aside class="col-span-1 md:col-span-1">
+            <div class="bg-white rounded-md p-4 shadow">
+              <h3 class="font-semibold mb-2">Cart</h3>
+              <ul id="cart-list" class="space-y-2"></ul>
+              <div class="mt-4 text-right">
+                <span class="font-bold">Total: </span
+                ><span id="cart-total">৳0</span>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </main>
@@ -232,6 +238,10 @@
       </p>
     </section>
     <!-- footer section is done  -->
+
+    <!-- modal div start  -->
+
+    <!-- modal div done  -->
     <script src="./index.js"></script>
   </body>
 </html>
